@@ -1,8 +1,8 @@
 var app = angular.module('confusionApp',[]);
 
-app.controller('dishDetailController', function() {
+app.controller('DishDetailController', ['$scope', function($scope) {
 
-    this.filter = '';
+    $scope.filter = '';
     
     var dish={
         name:'Uthapizza',
@@ -46,6 +46,6 @@ app.controller('dishDetailController', function() {
         ]
     };
 
-    this.dish = dish;
+    $scope.dish = dish;
 
-});
+}]);
